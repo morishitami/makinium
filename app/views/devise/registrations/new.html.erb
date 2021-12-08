@@ -13,6 +13,22 @@
 
   <div class="field">
     <div class='form-text-wrap'>
+      <label class="form-text">本名</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_field :name, class:"input-default", placeholder:"例) 鈴木太郎" %>
+  </div>
+
+  <div class="field">
+    <div class='form-text-wrap'>
+      <label class="form-text">芸名</label>
+      <span class="form-any">任意</span>
+    </div>
+    <%= f.text_field :stage_name, class:"input-default", placeholder:"本名と異なる場合は入力してください" %>
+  </div>
+
+  <div class="field">
+    <div class='form-text-wrap'>
     <label class="form-text">パスワード</label>
       <span class="indispensable">必須</span>
     </div>
@@ -29,7 +45,7 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "新規登録する" %>
   </div>
 <% end %>
 
